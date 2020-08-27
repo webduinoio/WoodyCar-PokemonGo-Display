@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data: https:">
+  <title>無敵車圖鑑</title>
+  <script
+    src="https://blocklypro.webduino.io/node_modules/jquery/dist/jquery.min.js?rev=2f6b11a7e914718e0290410e85366fe9"></script>
+  <script
+    src="https://blocklypro.webduino.io/dist/lib/webduino-all-0.4.20.min.js?rev=4426739c00d85325cb2d3d701fa50666"></script>
+  <script
+    src="https://blocklypro.webduino.io/dist/webduino-blockly.min.js?rev=b1ada5fdae699e60af615c060e786d60"></script>
+  <script src="https://blocklypro.webduino.io/dist/lib/firebase.min.js?rev=c0bfd493efd477d098a4ae9e92b13880"></script>
+  <script src="https://blocklypro.webduino.io/dist/lib/runtime.min.js?rev=683a69503433786202911b4d9f766100"></script>
+  <script
+    src="https://module.webduino.io/modules/2ea01dee-6de5-4ecc-90e3-5c479b865fa2/webduino-module-imageml/blockly/hashids.min.js"></script>
+  <script
+    src="https://module.webduino.io/modules/2ea01dee-6de5-4ecc-90e3-5c479b865fa2/webduino-module-imageml/adapter.js"></script>
+  <script
+    src="https://module.webduino.io/modules/2ea01dee-6de5-4ecc-90e3-5c479b865fa2/webduino-module-imageml/webRTC.js"></script>
+  <script
+    src="https://module.webduino.io/modules/2ea01dee-6de5-4ecc-90e3-5c479b865fa2/webduino-module-imageml/blockly/util.js"></script>
+  <script
+    src="https://module.webduino.io/modules/2ea01dee-6de5-4ecc-90e3-5c479b865fa2/webduino-module-imageml/imageml.js"></script>
+  <script
+    src="https://module.webduino.io/modules/2ea01dee-6de5-4ecc-90e3-5c479b865fa2/webduino-module-imageml/imageml-blockly.js"></script>
+  <script src="https://blocklypro.webduino.io/node_modules/webduino-module-woodycar/camera.js"></script>
+  <script src="https://blocklypro.webduino.io/node_modules/webduino-module-woodycar/webcam.js"></script>
+  <script src="https://blocklypro.webduino.io/node_modules/webduino-module-woodycar/face-blockly.js"></script>
+  <script src="https://blocklypro.webduino.io/node_modules/webduino-module-woodycar/WoodyCar.js"></script>
+  <script src="https://blocklypro.webduino.io/node_modules/webduino-module-woodycar/WoodyCar-blockly.js"></script>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="header flex-container">
+    <div id="power" class="flex-container">
+      <div>
+        <div></div>
+      </div>
+    </div>
+    <div class="info"></div>
+  </div>
+
+  <div id="screen">
+    <img id="result" src="./asset/white.png">
+    <img id="logo" src="./asset/webduino.png">
+
+    <!-- demo-area-09-btn-group for camera input -->
+    <div class="demo-area-09-btn-group"></div>
+  </div>
+
+  <div class="flex-container mt-5">
+    <div id="direction">
+      <div class="flex-container">
+        <div class="btn btn-direction btn-up">▲</div>
+      </div>
+      <div class="flex-container">
+        <div class="btn btn-direction btn-left">◀</div>
+        <div class="btn btn-direction"></div>
+        <div class="btn btn-direction btn-right">▶</div>
+      </div>
+      <div class="flex-container">
+        <div class="btn btn-direction btn-down">▼</div>
+      </div>
+    </div>
+    <div class="btn btn-scan">掃描</div>
+  </div>
+</body>
+<script src="config.js"></script>
+<script src="index.js"></script>
+
+</html>

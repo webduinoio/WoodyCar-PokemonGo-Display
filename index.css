@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'gsmgt';
+  src: url('./asset/GenSenMaruGothicTW-Bold.ttf');
+}
+
+html {
+  background-color: white;
+  height: 100%;
+}
+
+body {
+  background-color: #DE432C;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 15px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.header {
+  padding: 5vw 2vw 3vw 0vw;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-scan {
+  background-color: #01B468;
+  width: 30vw;
+  height: 18vw;
+  text-align: center;
+  line-height: 18vw;
+  font-size: 7vw;
+  font-family: gsmgt;
+  color: #FCFCFC;
+  border-radius: 5px;
+  margin: auto 0;
+  margin-left: 10vw
+}
+
+#direction {
+  /* margin-left: 10vw; */
+}
+
+.btn:active {
+  background: #777;
+}
+
+.btn-direction{
+  background-color: #3C3C3C;
+  width: 12vw;
+  text-align: center;
+  line-height: 12vw;
+  font-size: 5vw;
+  color: #FCFCFC;
+}
+
+
+.btn-up {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.btn-down {
+  border-radius: 0px 0px 5px 5px;
+}
+
+.btn-right {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.btn-left {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.info {
+  background-color:#613030;
+  text-align: center;
+  line-height: 15vw;
+  font-size: 7vw;
+  font-family: gsmgt;
+  color: white;
+  border-radius: 10px;
+  width: 60vw;
+  height: 15vw;
+  margin-left: 5vw; 
+}
+
+#screen {
+  width: 90vw;
+  height: 90vw;
+  border-color: #4e2020 #853030;
+  border-style: solid;
+  background-color: gainsboro;
+  border-width: 2.5vw 2vw;
+  margin: 2vw;
+  border-radius: 5px;
+  position: relative;
+}
+
+#result {
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+  width: 30vw;
+  height: 30vw;
+  opacity: 0.5;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+#logo {
+  position: absolute;
+  left: calc(50% - 25vw);
+  bottom: 4vw;
+  width: 50vw;
+  z-index: 2;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+#power {
+  align-items: center;
+  height: 15vw;
+  width: 15vw;
+  background-color: white;
+  border-radius: 100%;
+}
+
+#power * {
+  border-radius: 100%;
+}
+
+#power > div {
+  height: 75%;
+  width: 75%;
+  background-color: #00E3E3;
+  animation-name:blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes blink{
+  from{
+    background-color: #FFD306;
+  }
+  to{
+    background-color: #08caaa;
+  }
+}
+
+#power > div > div {
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+  height: 20%;
+  width: 20%;
+  background-color: white;
+}
+
+.mt-5 {
+  margin-top: 5vw;
+}
+
+canvas {
+  min-width: 100%;
+}
+
+.demo-area-09-btn-group{
+  z-index: 1; 
+  width: 90vw; 
+  height: 90vw;
+}
